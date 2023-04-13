@@ -1,5 +1,5 @@
-import Post from "../models/Post.js";
-import User from "../models/User.js";
+const Post = require("../models/Post.js");
+const User = require("../models/User.js");
 
 
 //========CREATE======
