@@ -1,4 +1,4 @@
-const User = require("../models/User.js");
+import User from "../models/User.js";
 
 //=======READ==========
 export const getUser = async function (req, res) {

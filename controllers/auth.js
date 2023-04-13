@@ -1,6 +1,6 @@
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const UserModel = require("../models/User.js");
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import UserModel from "../models/User.js";
 
 //=========register user=====
 export const register = async function (req, res) {

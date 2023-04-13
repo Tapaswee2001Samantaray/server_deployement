@@ -1,6 +1,6 @@
-const express = require("express");
-const { getUser, getUserFriends, addRemoveFriend } = require("../controllers/users.js");
-const { verifyToken } = require("../middleware/auth.js");
+import express from "express";
+import { getUser, getUserFriends, addRemoveFriend } from "../controllers/users.js";
+import { verifyToken } from "../middleware/auth.js";
 
 const router = express.Router();
 
@@ -11,4 +11,4 @@ router.get("/:id/friends", verifyToken, getUserFriends);
 //=======UPDATE======
 router.patch("/:id/:friendId", verifyToken, addRemoveFriend);
 
-module.exports = router;
+export default router;
